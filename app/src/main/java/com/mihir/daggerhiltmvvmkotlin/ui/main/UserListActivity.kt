@@ -3,6 +3,7 @@ package com.mihir.daggerhiltmvvmkotlin.ui.main
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -31,12 +32,14 @@ class UserListActivity : AppCompatActivity() {
         searchView = findViewById(R.id.searchView)
         setUpRecyclerView()
 
-
         /*profileViewModel.getAllUsers().observe(this, Observer<List<UserEntity>> {
             if (it.isNotEmpty())
                  rvAdapter.differ.submitList(it)
             else Toast.makeText(this,"users not available", Toast.LENGTH_SHORT).show()
         })*/
+
+        Log.i("TAG", "second commit")
+
         profileViewModel.loadUsers()
         fab1.setOnClickListener {
             startActivity(Intent(this,ProfileActivity::class.java))
