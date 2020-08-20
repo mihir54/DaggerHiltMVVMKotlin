@@ -39,9 +39,7 @@ class UserListActivity : AppCompatActivity() {
         })*/
 
         Log.i("TAG", "second commit")
-
-
-        error in file
+        awasome day
 
         profileViewModel.loadUsers()
         fab1.setOnClickListener {
