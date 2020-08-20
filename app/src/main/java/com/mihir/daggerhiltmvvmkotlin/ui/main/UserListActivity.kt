@@ -39,7 +39,7 @@ class UserListActivity : AppCompatActivity() {
         })*/
 
         Log.i("TAG", "second commit")
-        awasome day
+
 
         profileViewModel.loadUsers()
         fab1.setOnClickListener {
