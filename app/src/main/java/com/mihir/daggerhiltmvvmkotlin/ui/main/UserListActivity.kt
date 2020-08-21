@@ -40,6 +40,7 @@ class UserListActivity : AppCompatActivity() {
 
         Log.i("TAG", "second commit")
         println("My fifth commit")
+        println("change 1 in master")
 
         profileViewModel.loadUsers()
         fab1.setOnClickListener {
